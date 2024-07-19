@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:wght@400;700&display=swap" rel="stylesheet">
+    <title>Tela de Login do Instragram</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Instragram</h1>
+        <div>
+            <input type="text" placeholder="Phone number, username or email address" class="email">
+        </div>
+        <div>
+            <input type="password" placeholder="Password" class="senha">
+            <img width="20" height="20" src="https://img.icons8.com/fluency-systems-filled/48/visible.png" alt="visible"
+                class="olho-1">
+            <br>
+            <a href="clica" class="esqueceu">Forgot password?</a>
+            <div>
+                <button type="submit" id="login" onclick="logar(); return false">Login</button>
+            </div>
+            <div>
+                <p>or</p>
+            </div>
+            <div class="imagem-entrar">
+                <img src="./img/facebook.png" alt="imag" class="imagem"><a href="https://www.facebook.com/?locale=pt_BR"
+                    target="_blank" class="entrar">Login with Facebook</a>
+            </div>
+            <div class="account-1">
+                <p class="account">Don't have an account?</p> <a href="clica" class="cadastre">Sign up</a>
+            </div>
+        </div>
+        
+    </div>
+
+     <!--<script>
+        function logar() {
+            const login = document.querySelector('.email').value;
+            const password = document.querySelector('.senha').value;
+            if(login === 'admin' && password === 'admin'){
+                window.location.href = "http://127.0.0.1:5500/instagran.html";
+            } else {
+                alert('Login ou senha inválidos');
+            }
+        }
+    </script>-->
+   <img src="./img/insta-img.png" width="380.31" height="581.14" alt="" class="imagem-login">
+   
+   
+</body>
+<script src="./scripts.js"></script>
+
+</html>

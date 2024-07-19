@@ -1,0 +1,155 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./img/cor-de-fundo.png);
+   /* background-color: #f0f0f0;*/
+}
+
+.container {
+    background-color: white;
+    color: #000000;
+    position: absolute;
+    border: 1px solid #00000000;
+    border-radius: 15px;
+    width: 400px;
+    height: 500px;
+    text-align: center;
+    font-size: 16px;
+    left: 45%;
+    top: 50px;
+
+    & .olho-1 {
+        position: absolute;
+        left: 82%;
+        top: 36%;
+        cursor: pointer;
+        transition-delay: 0.2s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        height: 50px;
+        width: 135px;
+        border-top: 1px solid #7c7a7a77;
+        left: 45px;
+        top: 69%;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        height: 50px;
+        width: 135px;
+        border-top: 1px solid #7c7a7a77;
+        align-items: center;
+        left: 57%;
+        top: 69%;
+    }
+
+    & input::placeholder {
+        padding: 15px;
+    }
+}
+
+.imagem-login {
+    position: absolute;
+    top: 15px;
+    left: 17%;
+}
+
+h1 {
+    font-family: "Lobster Two", sans-serif;
+    font-size: 40px;
+    margin-top: 40px;
+}
+
+input {
+    width: 80%;
+    height: 40px;
+    align-items: center;
+    margin-top: 20px;
+    border: 1px solid #7c7a7a54;
+    border-radius: 5px;
+}
+
+.esqueceu {
+    text-decoration: none;
+    margin-left: 60%;
+    display: flex;
+    margin-top: 10px;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+button {
+    width: 80%;
+    height: 40px;
+    background-color: rgb(33, 88, 240);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    margin-top: 30px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgba(4, 54, 190, 0.8);
+    }
+}
+
+p {
+    margin-top: 22px;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.imagem-entrar {
+    display: flex;
+    margin-top: 30px;
+    margin-left: 30%;
+
+    & img {
+        width: 30px;
+    }
+
+    & a {
+        margin-left: 10px;
+        margin-top: 5px;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.account-1 {
+    position: absolute;
+    top: 95%;
+    left: 22%;
+
+    & .cadastre {
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.account {
+    font-size: 16px;
+    display: flex;
+    display: inline;
+}
