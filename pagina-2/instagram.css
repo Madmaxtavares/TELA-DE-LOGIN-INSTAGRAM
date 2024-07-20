@@ -1,0 +1,367 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+}
+
+body {
+    overflow-x: hidden;
+} 
+
+.container {
+    border: 1px solid #c9c5c5;
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    padding: 10px;
+}
+
+h1 {
+    font-family: "Lobster Two", sans-serif;
+    font-size: 25px;
+    padding-top: 10%;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.item {
+    top: 17%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    cursor: pointer;
+
+    & .perfil {
+        border: 2px solid #c9c5c5;
+        border-radius: 50%;
+    }
+}
+
+.item-img {
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 220px;
+    height: 48px;
+    border: none;
+    border-radius: 10px;
+}
+
+.item-img:hover {
+    background-color: #ebe9e9;
+    cursor: pointer;
+
+    & img {
+        transform: scale(1.2);
+        transition: 0.2s;
+    }
+}
+
+.description {
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    padding-top: 5px;
+    left: 55px;
+    top: 21%;
+    gap: 36px;
+}
+
+.container2 {
+    padding: 0;
+    position: absolute;
+    display: flex;
+    left: 20%;
+    width: 800px;
+    height: 100vw;
+    border: none;
+    top: 20px;
+}
+
+.botao {
+    display: flex;
+    position: absolute;
+    right: 45px;
+    bottom: 30px;
+
+}
+
+.stors {
+    position: absolute;
+    display: flex;
+    padding: 15px;
+    left: 25px;
+    top: 5px;
+    gap: 20px;
+    cursor: pointer;
+
+    & .stors-perfil {
+        border-left: 3px solid rgb(219, 46, 235);
+        border-right: 3px solid rgb(240, 6, 115);
+        border-top: 3px solid rgba(241, 44, 44, 0.952);
+        border-bottom: 3px solid rgb(250, 119, 44);
+        border-radius: 100%;
+    }
+
+    & .imagem {
+        border-radius: 50%;
+        display: flex;
+        padding: 2px;
+    }
+}
+
+.nome-principal {
+    display: flex;
+    margin-left: 40px;
+    margin-bottom: 147%;
+    gap: 30px;
+}
+
+.nomes {
+    display: flex;
+
+    & .apelido {
+        display: flex;
+        align-items: center;
+    }
+
+}
+
+.post {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 10px;
+    left: 12%;
+    top: 10%;
+
+    & .usuario {
+        display: flex;
+        border-left: 3px solid rgb(219, 46, 235);
+        border-right: 3px solid rgb(240, 6, 115);
+        border-top: 3px solid rgba(241, 44, 44, 0.952);
+        border-bottom: 3px solid rgb(250, 119, 44);
+        border-radius: 50%;
+        margin-bottom: 10px;
+        padding: 2px;
+        cursor: pointer;
+    }
+
+    & .nome-perfil {
+        font-size: 16px;
+        font-weight: 400;
+        display: flex;
+        position: absolute;
+        top: 4%;
+        left: 14%;
+        cursor: pointer;
+    }
+}
+
+.ponto-time {
+    display: flex;
+    position: absolute;
+    top: 166px;
+    left: 267px;
+    cursor: pointer;
+}
+
+.ponto {
+    display: flex;
+    position: absolute;
+    top: 163px;
+    left: 31%;
+}
+
+nav {
+    display: flex;
+    position: absolute;
+    top: 12%;
+    left: 67%;
+    cursor: pointer;
+}
+
+.post.mad-post img {
+    border-radius: 20x;
+}
+
+.icons {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10px;
+
+    & img:hover {
+        cursor: pointer;
+        opacity: 0.5;
+
+    }
+}
+
+.icons-2 img {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    right: 1%;
+    bottom: 3px;
+}
+
+#input {
+    display: flex;
+    position: absolute;
+    width: 468px;
+    height: 50px;
+    bottom: 30%;
+    left: 12%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #c9c5c5;
+    outline: none;
+}
+
+.emoji {
+    display: flex;
+    position: absolute;
+    bottom: 31%;
+    left: 68%;
+}
+
+.emoji:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.container3 {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    width: 383px;
+    height: 607px;
+    border: none;
+    right: 0;
+    
+    & img {
+        border: 1px solid #b0b2b4;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+}
+
+.parte1 {
+    display: flex;
+    margin-top: 13%;
+    margin-left: 15%;
+
+    & .gil {
+        font-size: 14px;
+        margin-left: 12px;
+        margin-top: 12px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    
+    & .gil-1 {
+        font-size: 14px;
+        color: #969799;
+        display: flex;
+        position: absolute;
+        margin-top: 30px;
+        margin-left: 50px;
+    }
+
+    & .mudar {
+        color: #02c8ff;
+        font-size: 12px;
+        display: flex;
+        margin-left: 30%;
+        margin-top: 20px;
+        text-decoration: none;
+    }
+
+}
+
+.parte2 {
+    display: flex;
+    margin-top: 5%;
+    margin-left: 15%;
+    gap: 20%;
+
+    & .sugestoes-1 {
+        font-size: 14px;
+        font-weight: bold;
+        color: #95989b;
+    }
+
+    & .ver-tudo {
+        font-weight: bold;
+        font-size: 12px;
+        cursor: pointer;
+    }
+}
+
+.parte3 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    margin-left: 15%;
+}
+ 
+.nome-s {
+    position: relative;
+    display: flex;
+    left: 55px;
+    bottom: 40px;
+    font-size: 14px; 
+    cursor: pointer;     
+}
+
+.sugestoes {
+    font-size: 12px;
+    color: #969799;
+    display: flex;
+    position: relative;
+    left: 55px;
+    bottom: 38px;
+}
+
+.parte4 {
+    font-size: 12px;
+    color: #02c8ff;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    gap: 60px;
+    top: 27%;
+    right: 25%;
+    cursor: pointer;
+}
+
+footer p {
+    font-size: 12px;
+    color: #b0b2b4;
+    margin-top: 15px;
+    margin-left: 40px;
+
+    & span {
+        cursor: pointer;
+    }
+
+    & span:hover {
+        text-decoration: underline;
+    }
+}
+
+.footer {
+    margin-top: 35px;
+}
