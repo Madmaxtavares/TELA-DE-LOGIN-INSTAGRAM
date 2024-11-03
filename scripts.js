@@ -8,7 +8,7 @@ function logar() {
     const password = document.querySelector('.senha').value
 
     if (email === 'admin' && password === 'admin') {
-        location.href = "http://127.0.0.1:5500/pagina-2/index.html"
+        location.href = "./pagina-2/index.html"
     } else {
         alert('Email ou Senha inválidas')
     }
